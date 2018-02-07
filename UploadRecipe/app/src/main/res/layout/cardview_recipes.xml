@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/cardview_advies">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/cardview"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDish_Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/likes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/like"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tvlikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/likes"
+            android:layout_alignLeft="@+id/likes"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_alignStart="@+id/likes" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
